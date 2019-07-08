@@ -4,7 +4,7 @@ heroImage: /vue-logo.png
 heroText: My Blog
 tagline: 博客列表
 actionText: 快速上手 →
-actionLink: /
+actionLink: /blog/JavaScript中的一些问题.md
 features:
 - title: 学习总结
   details: 平时日常学习积累，包括前端三大栈的基础，以及拓展知识的记录。
