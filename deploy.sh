@@ -13,7 +13,10 @@ git init
 git add -A
 git commit -m 'deploy'
 
+git remote add origin https://github.com/18134906388/my-blog.git
+
+git pull origin master --allow-unrelated-histories
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:18134906388/my-blog.git master:gh-pages
+git push -f origin master:gh-pages
 
 cd -
