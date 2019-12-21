@@ -39,7 +39,7 @@ IE模式  盒子模型的width/height = content + margin ，其中content包含�
 - grid栅格布局
 
 ## flex弹性盒模型
-![flex](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png)
+![flex](.img/bg2015071004.png)
 推荐阮一峰老师的两篇文章http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html<br>
 http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；交叉轴的开始位置叫做cross start，结束位置叫做cross end。

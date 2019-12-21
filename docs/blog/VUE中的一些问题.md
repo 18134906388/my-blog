@@ -110,7 +110,7 @@ var vm = new Vue({
 ```
 ## vue渲染机制
 参考https://segmentfault.com/a/1190000009467029
-![vue渲染机制](https://segmentfault.com/img/bVNSij?w=1023&h=761)
+![vue渲染机制](.img/vue渲染机制.png)
 
 独立构建：包含模板编译器
 
