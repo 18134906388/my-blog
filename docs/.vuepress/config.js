@@ -23,6 +23,7 @@ module.exports = {
             ['/blog/使用mpvue开发微信小程序遇到的坑.md', '使用mpvue开发微信小程序遇到的坑'],
             ['/blog/项目开发中的坑.md', '项目开发中的坑'],
             ['/blog/江苏E项目总结.md', '江苏E项目总结'],
+            ['/blog/上海R项目总结.md', '上海R项目总结'],
             ['/blog/面试遇到的问题.md', '面试遇到的问题'],
             ['/blog/MySql问题总结.md', 'MySql问题总结'],
             ['/blog/有趣的JS文章.md', '有趣的JS文章'],

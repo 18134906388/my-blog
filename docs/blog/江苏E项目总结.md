@@ -103,6 +103,10 @@ server {
 [Vue Drag and Drop](https://www.jianshu.com/p/4d997bd855d3)
 也可以采用比较成熟的vue-drag-drop库去实现。
 
+### 页面被iframe嵌套后出现拒绝了我们的连接请求
+因为对象服务器为http响应头设置了`X-Frame-Options: sameorigin`，这样页面就不能跨域通过iframe标签加载了。
+解决办法：通过nginx设置一层正向代理。
+
 ## 项目亮点
 ### 工具函数包
 对于一些常用的工具函数封装到一个npm包中统一管理，方便后续项目集成使用。 `npm install supper-tools`
