@@ -29,5 +29,12 @@ module.exports = {
             ['/blog/有趣的JS文章.md', '有趣的JS文章'],
             ['/blog/前端培训课件.md', '前端培训课件']
         ]
-  }
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@img': '/.vuepress/public/img'
+            }
+        }
+    }
 }

@@ -5,10 +5,10 @@
 首先来介绍下 prototype 属性。这是一个显式原型属性，只有函数才拥有该属性。基本上所有函数都有这个属性，但是也有一个例外 `let fun = Function.prototype.bind()` 如果你以上述方法创建一个函数，那么可以发现这个函数是不具有 prototype 属性的。
 ### prototype 如何产生的？
 当我们声明一个函数时，这个属性就被自动创建了。`function Foo() {}` ,并且这个属性的值是一个对象（也就是原型），只有一个属性 constructor 对应着构造函数，也就是 Foo。<br>
-![函数prototype](./img/prototype.png)
+![函数prototype](../.vuepress/public/img/prototype.png)
 ### constructor
 constructor 是一个公有且不可枚举的属性。一旦我们改变了函数的 prototype ，那么新对象就没有这个属性了。原型的 constructor 属性指向构造函数，构造函数又通过 prototype 属性指回原型，但是并不是所有函数都具有这个属性，Function.prototype.bind() 就没有这个属性。<br>
-![constructor](./img/constructor.jpg "constructor")
+![constructor](../.vuepress/public/img/constructor.jpg)
 
 那么你肯定也有一个疑问，这个属性到底有什么用呢？其实这个属性可以说是一个历史遗留问题，在大部分情况下是没用的，在我的理解里，我认为他有两个作用：
 - 让实例对象知道是什么函数构造了它
@@ -16,7 +16,7 @@ constructor 是一个公有且不可枚举的属性。一旦我们改变了函�
 
 ### _proto\_
 这是每个对象都有的隐式原型属性，指向了创建该对象的构造函数的原型。其实这个属性指向了 [[prototype]]，但是 [[prototype]] 是内部属性，我们并不能访问到，所以使用 _proto_ 来访问。<br>
-![_proto_](./img/proto1.png "_proto_")
+![_proto_](../.vuepress/public/img/proto1.png)
 
 因为在 JS 中是没有类的概念的，为了实现类似继承的方式，通过 _proto_ 将对象和原型联系起来组成原型链，得以让对象可以访问到不属于自己的属性。
 
@@ -42,7 +42,7 @@ constructor 是一个公有且不可枚举的属性。一旦我们改变了函�
 现在可以来解释 Function.__proto__ === Function.prototype 这个问题了。因为先有的 Function.prototype 以后才有的 function Function() ，所以也就不存在鸡生蛋蛋生鸡的悖论问题了。对于为什么 Function.__proto__ 会等于 Function.prototype ，个人的理解是：其他所有的构造函数都可以通过原型链找到 Function.prototype ，并且 function Function() 本质也是一个函数，为了不产生混乱就将 function Function() 的 __proto__ 联系到了 Function.prototype 上。
 
 ### 总结
-![原型以及原型链](.img/原型链.png)
+![原型以及原型链](../.vuepress/public/img/prototype2.png)
 1. Object 是所有对象的爸爸，所有对象都可以通过 __proto__ 找到它
 2. Function 是所有函数的爸爸，所有函数都可以通过 __proto__ 找到它
 3. Function.prototype 和 Object.prototype 是两个特殊的对象，他们由引擎来创建
@@ -121,7 +121,7 @@ for(var i=0;i<=10;i++){
 ## this作用域
 在我理解js中this作用域指向调用他的对象，但是在我查阅一些资料后，发现这个答案不全面，针对单个规则的，我们可以看下雨判断作用域。
 
-![this](.img/this作用域.png)
+![this](../.vuepress/public/img/this.png)
 
 当发生多个规则同时出现的情况，这时候不同的规则之间会根据优先级最高的来决定 this 最终指向哪里，new>bind>obj.foo()>foo()，同时，箭头函数的 this 一旦被绑定，就不会再被任何方式所改变。
 ## js的几种继承方式

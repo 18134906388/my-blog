@@ -7,7 +7,7 @@ model是我们的业务逻辑数据，view是向用户展示的界面，他们�
 ![vue生命周期](https://cn.vuejs.org/images/lifecycle.png)
 - beforeCreate 发生在实例刚创建，属性还没有计算，这里取不到$el,$date，实际开发过程中我们可以在这里添加一个loading函数。
 - created 这一步，实例已完成以下的配置：数据观测(data observer)，属性和方法的运算， watch/event 事件回调，这里我们可以访$date,实际开发过程中在这结束loading，数据初始化。
-- beforeMount 挂载之前被调用，这里可以访问到$el,$date但是在$el中所有双向绑定的数据均使用{{xxxx}}占位。
+- beforeMount 挂载之前被调用，这里可以访问到$el,$date但是在$el中所有双向绑定的数据均使用\{\{`xxxx`\}\}占位。
 - mounted 挂载之后被调用，这里可以访问到正常的$el,$date。实际开发过程中在这发现后端查询，这里可以操作dom。
 - beforeUpdate 数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前。实际开发过程中可以在这个钩子中进一步地更改状态，这不会触发附加的重渲染过程。
 - updated 这里数据已经被更新，DOM 已重新渲染和补丁也已经打好，实际开发过程中避免在此期间更改状态，因为这可能会导致更新无限循环。
@@ -110,7 +110,7 @@ var vm = new Vue({
 ```
 ## vue渲染机制
 参考https://segmentfault.com/a/1190000009467029
-![vue渲染机制](.img/vue渲染机制.png)
+![vue渲染机制](../.vuepress/public/img/vueRender.png)
 
 独立构建：包含模板编译器
 
