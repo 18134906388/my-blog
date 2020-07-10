@@ -11,9 +11,13 @@ module.exports = {
         // 自定义仓库链接文字。
         repoLabel: 'My GitHub',
         nav: [
-            { text: 'Home', link: '/' },
-            { text: 'JavaScript中的一些问题', link: '/blog/JavaScript中的一些问题.md' }
+            { text: '首页', link: '/' },
+            { text: '文档', link: '/blog/JavaScript中的一些问题.md' }
         ],
+        algolia: {
+            apiKey: '45266fef189a0e1d66f56a13dbd73b07',
+            indexName: 'rst-bj'
+        },
         sidebarDepth: 2,
         sidebar: [
             ['/', '首页'],
@@ -26,7 +30,7 @@ module.exports = {
             ['/blog/上海R项目总结.md', '上海R项目总结'],
             ['/blog/面试遇到的问题.md', '面试遇到的问题'],
             ['/blog/MySql问题总结.md', 'MySql问题总结'],
-            ['/blog/云服务器配置.md', '云服务器配置']
+            ['/blog/云服务器配置.md', '云服务器配置'],
             ['/blog/有趣的JS文章.md', '有趣的JS文章'],
             ['/blog/前端培训课件.md', '前端培训课件']
         ]
