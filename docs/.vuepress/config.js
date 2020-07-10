@@ -12,7 +12,7 @@ module.exports = {
         repoLabel: 'My GitHub',
         nav: [
             { text: '首页', link: '/' },
-            { text: '文档', link: '/blog/JavaScript中的一些问题.md' }
+            // { text: '文档', link: '/blog/JavaScript中的一些问题.md' }
         ],
         algolia: {
             apiKey: '45266fef189a0e1d66f56a13dbd73b07',
@@ -21,6 +21,7 @@ module.exports = {
         sidebarDepth: 2,
         sidebar: [
             ['/', '首页'],
+            ['/blog/流媒体播放器.md', '流媒体播放器'],
             ['/blog/JavaScript中的一些问题.md', 'JavaScript中的一些问题'],
             ['/blog/CSS中遇到的问题.md', 'CSS中遇到的问题'],
             ['/blog/VUE中的一些问题.md', 'VUE中的一些问题'],
