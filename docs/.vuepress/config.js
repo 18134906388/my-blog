@@ -22,6 +22,7 @@ module.exports = {
         sidebar: [
             ['/', '首页'],
             ['/blog/流媒体播放器.md', '流媒体播放器'],
+            ['/blog/gis总结.md', 'gis总结'],
             ['/blog/JS中遇到问题.md', 'JS中遇到问题'],
             ['/blog/CSS中遇到的问题.md', 'CSS中遇到的问题'],
             ['/blog/VUE中的一些问题.md', 'VUE中的一些问题'],
