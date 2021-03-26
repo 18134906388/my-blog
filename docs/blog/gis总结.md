@@ -7,7 +7,7 @@
 ## 解决方案
 
 1. 我司封装的znvmap地图组件、其中封装的多个厂商的API、保障了对外API的一致性，即可实现一次编码，多种地图的无缝切换。<https://www.npmjs.com/package/znvmap>
-2. 盛政老师的greengis，开发一套新的gisAPI，但是通过一个巧妙的方法将greengis的图层和地图图层关联。<https://www.zhihu.com/people/sheng-zheng-10/zvideos>
+2. 盛政老师的greengis，开发一套新的gisAPI，但是通过一个巧妙的方法将greengis的图层和地图图层关联。<https://github.com/shengzheng1981/green-gis-js>
 
 ## 关键技术
 
